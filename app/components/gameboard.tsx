@@ -5,20 +5,25 @@ import { Modal, ModalContent, ModalBody, ModalHeader, ModalFooter, Button, useDi
 import Markdown from "react-markdown";
 import { GameboardContext, useGameboard, GameboardProvider } from "../providers";
 
-
+interface Question {
+    id: number;
+    text: string;
+    answer: string;
+    point: number;
+}
 
 export default function Gameboard() {
     const { questions, teamAScore, teamBScore, setTeamAScore, setTeamBScore, selectedTiles, handleTilePress, selectedQuestion } = useGameboard();
     const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
-    const [question, setQuestion] = useState(null);
+    const [question, setQuestion] = useState<Question>({ id: 0, text: '', answer: '', point: 0 });
     const [front, setFront] = useState(true);
 
     console.log(question)
     const handleTile = async (id: number) => {
         handleTilePress(id);
-        let questionsArr = questions.reduce((accum, curr) => [...curr.questions, ...accum], [])
+        let questionsArr = questions.reduce((accum: any, curr: { questions: Question[] }) => [...curr.questions, ...accum], [])
         console.log(questionsArr)
-        setQuestion(questionsArr.find((q) => q.id === id));
+        setQuestion(questionsArr.find((q: Question) => q.id === id));
         setFront(true);
         onOpen();
     }

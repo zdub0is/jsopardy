@@ -32,6 +32,7 @@ const sanitize = (data: any) => {
         const { category: categoryName, ...questions } = category;
         return {
             category: categoryName,
+			// @ts-ignore
             questions: Object.entries(questions).map(([point, { id, text, answer }]) => ({
                 point: Number(point),
                 id,
@@ -51,23 +52,28 @@ export const useGameboard = () => {
 	}
 	return context;
 };
-
+interface Question {
+	id: string;
+	text: string;
+	answer: string;
+	point: number;
+}
 export const GameboardProvider = ({ children }: { children: React.ReactNode }) => {
 	const questions = sanitize(notSanitized);
 	const [teamAScore, setTeamAScore] = useState(0);
 	const [teamBScore, setTeamBScore] = useState(0);
-	const [selectedTiles, setSelectedTiles] = useState([]);
+	const [selectedTiles, setSelectedTiles] = useState<string[]>([]);
 	const [front, setFront] = useState(true);
 	const [selectedQuestion, setSelectedQuestion] = useState(null);
 	const [winner, setWinner] = useState(null);
 
 	const {isOpen, onOpen, onClose} = useDisclosure();
-	const handleTilePress = (id: number) => {
+	const handleTilePress = (id: string) => {
 		console.log(id)
 		setSelectedTiles([...selectedTiles, id]);
-		let questionsArr = questions.reduce((accum, curr) => [...curr.questions, ...accum], [])
+		let questionsArr = questions.reduce((accum: Question[], curr: {questions: Question[]}) => [...curr.questions, ...accum], [])
         // console.log(questionsArr)
-        setSelectedQuestion(questionsArr.find((q) => q.id === id));
+        setSelectedQuestion(questionsArr.find((q: Question) => q.id === id));
 		// setSelectedQuestion(question);
 	};
 

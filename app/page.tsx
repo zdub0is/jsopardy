@@ -11,9 +11,7 @@ import { Tile } from "@/app/components/tile";
 
 import questions from "@/data/questions-sample.json"
 import Gameboard from "./components/gameboard";
-import CardModal from "./components/cardmodal";
 import { GameboardProvider, useGameboard } from "./providers";
-import ModalTest from "./components/modaltest";
 import Scoreboard from "./components/scoreboard";
 import FinalJeopardy from "./components/finaljeopardy";
 import { Button } from "@nextui-org/button";
