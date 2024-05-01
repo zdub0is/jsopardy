@@ -62,19 +62,6 @@ export default function Gameboard() {
             </>
         )
     }
-    /**
-     * 
-     *{questions.map((category: any) => (
-                    <div key={category.category} className="flex flex-col items-center gap-4">
-                        <h2 className="text-3xl font-bold ">{category.category}</h2>
-                        <div className="grid grid-col gap-4">
-                            {category.questions.map((question: any) => (
-                                <Tile key={question.id} point={question.point} id={question.id} active={!selectedTiles.includes(question.id)} handleTilePress={handleTile} />
-                            ))}
-                        </div>
-                    </div>
-                ))}
-     */
 
     const WriteGameboard = () => {
         const categories = questions.map((category: any) => category.category);

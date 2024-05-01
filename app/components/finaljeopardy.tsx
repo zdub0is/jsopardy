@@ -21,7 +21,7 @@ export default function FinalJeopardy() {
 
     return (
         <>
-        <Button className="text-2xl py-8 px-4" variant="shadow" color="primary" onClick={onOpen}>Open Final Jeopardy</Button>
+        <Button className="text-2xl py-8 px-4" variant="light" onClick={onOpen}>Open Final Jeopardy</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="full" className="text-4xl py-8 px-4">
             <ModalContent>
             {(onClose) => (
@@ -31,8 +31,8 @@ export default function FinalJeopardy() {
             </ModalBody>
             <ModalFooter>
                 <Button className="text-2xl py-8 px-4" variant="shadow" onClick={() => setFront(!front)}>{front ? "Show Answer" : "Show Question"}</Button>
-                <Button className="text-2xl py-8 px-4" variant="shadow" onClick={() => handleWinner(true)}>Team A</Button>
-                <Button className="text-2xl py-8 px-4" variant="shadow" onClick={() => handleWinner(false)}>Team B</Button>
+                <Button className="text-2xl py-8 px-4" variant="shadow" color="primary" onClick={() => handleWinner(true)}>Team A</Button>
+                <Button className="text-2xl py-8 px-4" variant="shadow" color="secondary" onClick={() => handleWinner(false)}>Team B</Button>
             </ModalFooter></>
             )}
             </ModalContent>

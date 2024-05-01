@@ -37,7 +37,7 @@ export default function Home() {
 			: (
 			<section className="flex flex-row items-center justify-between gap-4 pt-6 md:pt-6">
 				<h1 className="text-4xl font-bold text-center">{winner ? "Team A Wins!" : "Team B Wins!"}</h1>
-				<Button className="text-2xl py-8 px-4" variant="shadow" color="primary" onClick={() => resetGame()}>Play Again</Button>
+				<Button className="text-2xl py-8 px-4" variant="shadow" color="success" onClick={() => resetGame()}>Play Again</Button>
 			</section>
 		)}
 		</>
