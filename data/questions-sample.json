@@ -1,0 +1,200 @@
+[
+    {
+        "category": "Trio of Concepts",
+        "100": {
+            "id": "pc100",
+            "text": "The concepts of `.map()`, for loops, and while loops are all examples of what?",
+            "answer": "iteration methods/loops"
+        },
+        "200": {
+            "id": "pc200",
+            "text": "The methods `.slice()`, `.pop()`, `.shift()` are all examples of what?",
+            "answer": "deleting elements"
+        },
+        "300": {
+            "id": "pc300",
+            "text": "Using a for loop, `.indexOf()`, and `.includes()` are all examples of what?",
+            "answer": "searching arrays"
+        },
+        "400": {
+            "id": "pc400",
+            "text": "keydown, mouseover, and click are all examples of what?",
+            "answer": "event listeners"
+        },
+        "500": {
+            "id": "pc500",
+            "text": "arrow, anonymous, callback are all examples of what?",
+            "answer": "script placement"
+        },
+        "600": {
+            "id": "pc600",
+            "text": "The concepts of `.push()`, `.unshift()`, and `.concat()` are all examples of what?",
+            "answer": "adding elements to an array"
+        }
+    },
+    {
+        "category": "Methods",
+        "100": {
+            "id": "m100",
+            "text": "This method is used to add elements to the array.",
+            "answer": "push or unshift"
+        },
+        "200": {
+            "id": "m200",
+            "text": "This method is used to change all the letters in a string to one type of letters.",
+            "answer": "toUpperCase or toLowerCase"
+        },
+        "300": {
+            "id": "m300",
+            "text": "This method allows you to check if an item is in an array.",
+            "answer": "includes or indexOf"
+        },
+        "400": {
+            "id": "m400",
+            "text": "This method is used to turn a string into an array.",
+            "answer": "split"
+        },
+        "500": {
+            "id": "m500",
+            "text": "This method is useful for cleaning strings based on a regular expression.",
+            "answer": "replace/replaceAll"
+        },
+        "600": {
+            "id": "m600",
+            "text": "This method sounds similar to another, but this one mutates the original array and the other does not.",
+            "answer": "splice"
+        }
+    },
+    {
+        "category": "Vocabulary",
+        "100": {
+            "id": "v100",
+            "text": "A way to declare a variable",
+            "answer": "let, const, var"
+        },
+        "200": {
+            "id": "v200",
+            "text": "A true or false value is known as a...",
+            "answer": "boolean"
+        },
+        "300": {
+            "id": "v300",
+            "text": "A block of repeatable code that can be called by name.",
+            "answer": "function"
+        },
+        "400": {
+            "id": "v400",
+            "text": "Text only interface that shows warnings, errors, and information about your code.",
+            "answer": "terminal/console"
+        },
+        "500": {
+            "id": "v500",
+            "text": "Indicated as three equal signs, this operator checks for equality and type.",
+            "answer": "=== or strict equality"
+        },
+        "600": {
+            "id": "v600",
+            "text": "When a function calls itself to complete a task, it is known as...",
+            "answer": "recursion"
+        }
+    },
+    {
+        "category": "Vocab 2",
+        "100": {
+            "id": "vo100",
+            "text": "Square brackets that hold a list of items.",
+            "answer": "array"
+        },
+        "200": {
+            "id": "vo200",
+            "text": "Computers use this to communicate with each other.",
+            "answer": "internet"
+        },
+        "300": {
+            "id": "vo300",
+            "text": "Ways for developers to leave notes in their code.",
+            "answer": "comments"
+        },
+        "400": {
+            "id": "vo400",
+            "text": "A way to store data in key-value pairs.",
+            "answer": "object"
+        },
+        "500": {
+            "id": "vo500",
+            "text": "A way to reuse objects with similar properties and methods.",
+            "answer": "class"
+        },
+        "600": {
+            "id": "vo600",
+            "text": "A set of rules or instructions to solve a problem.",
+            "answer": "algorithm"
+        }
+    },
+    {
+        "category": "Explain the Code",
+        "100": {
+            "id": "e100",
+            "text": "```javascript\nconsole.log(\"Hello, World!\");",
+            "answer": "print Hello, World! to the console"
+        },
+        "200": {
+            "id": "e200",
+            "text": "```javascript\nlet x = 5;  \nconsole.log(x * x);",
+            "answer": "prints 25 to the console"
+        },
+        "300": {
+            "id": "e300",
+            "text": "```javascript\nlet age = 18;\nif (age >= 18) {  \n\tconsole.log(\"Adult\"); \n} else {\n\tconsole.log(\"Minor\");  \n}",
+            "answer": "Prints Adult to the console"
+        },
+        "400": {
+            "id": "e400",
+            "text": "```javascript\nlet text = \"JavaScript\";\nconsole.log(text.substring(4).toUpperCase());",
+            "answer": "Print SCRIPT"
+        },
+        "500": {
+            "id": "e500",
+            "text": "```javascript\nlet array = [10, 20, 30];\nlet sum = array.reduce((total, current) => \n\t\ttotal + current);\nconsole.log(sum);",
+            "answer": "Prints 60 to the console"
+        },
+        "600": {
+            "id": "e600",
+            "text": "```javascript\nlet numbers = [1, 2, 3, 4, 5];\nlet filtered = numbers.filter(num => \n\t\tnum % 2 !== 0);\nconsole.log(filtered);",
+            "answer": "Prints [1, 3, 5] to the console"
+        }
+    },
+    {
+        "category": "What the Regex?",
+        "100": {
+            "id": "r100",
+            "text": "Regex: `/^\\d+$/`\nA. Any string containing one digit\nB. Any string containing only digits\nC. Any string starting and ending with a digit\nD. Any string without digits",
+            "answer": "B. Any string containing only digits"
+        },
+        "200": {
+            "id": "r200",
+            "text": "Regex: /\\b(cat|dog|bird)\\b/\nA. Any words that start with \"cat\", \"dog\", or \"bird\"\nB. The exact words \"cat\", \"dog\", or \"bird\"\nC. Any text containing \"cat\", \"dog\", or \"bird\"\nD. Words ending in \"cat\", \"dog\", or \"bird\"",
+            "answer": "B. The exact words \"cat\", \"dog\", or \"bird\"."
+        },
+        "300": {
+            "id": "r300",
+            "text": "Regex: /[A-Z]{3}/\nA. Any three lowercase letters\nB. Any three uppercase letters\nC. Any three letters regardless of case\nD. Any string of three characters",
+            "answer": "B. Any three uppercase letters"
+        },
+        "400": {
+            "id": "r400",
+            "text": "Regex: /\\b\\w{10}\\b/\nA. Any word with 10 characters\nB. Any word with 10 or more characters\nC. Any word with exactly 10 characters\nD. Any word with less than 10 characters",
+            "answer": "C. Any word with exactly 10 characters"
+        },
+        "500": {
+            "id": "r500",
+            "text": "Regex: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/\nA. A hex color code\nB. A phone number\nC. A social security number\nD. A zip code",
+            "answer": "A. A hex color code"
+        },
+        "600": {
+            "id": "r600",
+            "text": "Regex: /\\d{2}:\\d{2}:\\d{2}/\nA. A zip code\nB. A date in the format MM/DD/YYYY\nC. A phone number\nD. A time in the format HH:MM:SS",
+            "answer": "D. A time in the format HH:MM:SS"
+        }
+    }
+]

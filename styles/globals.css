@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: url('../public/docs-right.png');
+    background-position: 1200%;
+    background-repeat: no-repeat;
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    font-weight: normal;
+}
+
+.code {
+    background: #0a0a0a;
+    border-radius: 12px;
+    padding: 7px 15px;
+    border: #262626 2px solid;
+    text-align: left;
+    font-size: 4rem;
+    margin: 10vh auto 0 auto;
+}
+
+.line-break {
+    white-space: pre-wrap;
+}
+
+.regex {
+   text-align: left;
+   margin: 0vh auto;
+    font-size: 3rem;
+    font-weight: normal;
+}
