@@ -11,7 +11,7 @@
  * @returns {Array} An array of objects with the category name and file name.
  */
 export async function loadCategories() {
-  const categories = await fetch('/data/categories.json').then((res) => res.json());
+  const categories = await fetch('jsopardy/data/categories.json').then((res) => res.json());
   return categories;
 }
 
@@ -22,7 +22,7 @@ export async function loadCategories() {
  */
 
 export async function loadCategory(category: string) {
-  const questions = await fetch(`/data/${category}`).then((res) => res.json());
+  const questions = await fetch(`jsopardy/data/${category}`).then((res) => res.json());
   return questions;
 }
 
