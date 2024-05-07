@@ -23,26 +23,9 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 
 // Gameboard context. Team A and Team B scores are stored here, as well as what tiles have been selected.
 
-import { createContext, useContext, useState } from "react";
-import notSanitized from "@/data/questions-sample.json";
+import { createContext, useContext, useEffect, useState } from "react";
 import { useDisclosure } from "@nextui-org/react";
-
-const sanitize = (data: any) => {
-    return data.map((category: any) => {
-        const { category: categoryName, ...questions } = category;
-        return {
-            category: categoryName,
-			// @ts-ignore
-            questions: Object.entries(questions).map(([point, { id, text, answer }]) => ({
-                point: Number(point),
-                id,
-                text,
-                answer,
-            }),),
-        };
-    });
-};
-
+import { loadCategories, loadCategory, loadFinalJeopardy } from "./utils/loadFiles";
 
 
 export const useGameboard = () => {
@@ -59,20 +42,33 @@ interface Question {
 	point: number;
 }
 export const GameboardProvider = ({ children }: { children: React.ReactNode }) => {
-	const questions = sanitize(notSanitized);
+
+	const [categories, setCategories] = useState([]);
+	const [finalJeopardies, setFinalJeopardies] = useState([]);
+	const categoriesArr = categories.map((c: {name: string}) => c.name);
+	const [finalJeopardy, setFinalJeopardy] = useState(null);
+	const [questions, setQuestions] = useState<Array<Question[]>>([]);
+	const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 	const [teamAScore, setTeamAScore] = useState(0);
 	const [teamBScore, setTeamBScore] = useState(0);
 	const [selectedTiles, setSelectedTiles] = useState<string[]>([]);
 	const [front, setFront] = useState(true);
 	const [selectedQuestion, setSelectedQuestion] = useState(null);
 	const [winner, setWinner] = useState(null);
+	const categoriesToLoad = React.useMemo(() => Array.from(selectedCategories), [selectedCategories]);
 
 	const {isOpen, onOpen, onClose} = useDisclosure();
+
+	useEffect(() => {
+		loadCategories().then(setCategories);
+		loadFinalJeopardy().then(setFinalJeopardies);
+	  }, []);
 	const handleTilePress = (id: string) => {
-		console.log(id)
 		setSelectedTiles([...selectedTiles, id]);
-		let questionsArr = questions.reduce((accum: Question[], curr: {questions: Question[]}) => [...curr.questions, ...accum], [])
+		// let questionsArr = questions.reduce((accum: Question[], curr: {questions: Question[]}) => [...curr.questions, ...accum], [])
+		let questionsArr = questions.flat();
         // console.log(questionsArr)
+		//@ts-ignore
         setSelectedQuestion(questionsArr.find((q: Question) => q.id === id));
 		// setSelectedQuestion(question);
 	};
@@ -81,8 +77,29 @@ export const GameboardProvider = ({ children }: { children: React.ReactNode }) =
 		setTeamAScore(0);
 		setTeamBScore(0);
 		setSelectedTiles([]);
+		setQuestions([]);
+		setFront(true);
+		setSelectedCategories([]);
 		setWinner(null);
 	}
+
+	const startGame = async () => {
+		setQuestions([]);
+		
+		categoriesToLoad.forEach((category: string) => {
+			loadCategoryQuestions(category);
+		});
+		// send to /game
+
+
+	}
+
+	const loadCategoryQuestions = async (category: string) => {
+		//@ts-ignore
+		const questionsFind = await loadCategory(categories.find((c: {name: string}) => c.name === category).file);
+		setQuestions(prev => [...prev, questionsFind]);
+	}
+
 
 	return (
 		<GameboardContext.Provider
@@ -102,7 +119,16 @@ export const GameboardProvider = ({ children }: { children: React.ReactNode }) =
 				selectedQuestion,
 				winner,
 				setWinner,
-				resetGame
+				resetGame,
+				loadCategoryQuestions,
+				categoriesArr,
+				selectedCategories,
+				setSelectedCategories,
+				finalJeopardies,
+				finalJeopardy,
+				setFinalJeopardy,
+				startGame,
+				categoriesToLoad
 			}}
 		>
 			{children}

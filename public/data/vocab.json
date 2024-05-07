@@ -1,0 +1,39 @@
+[
+    {
+        "id": "v100",
+        "points": "100",
+        "text": "A way to declare a variable",
+        "answer": "let, const, var"
+    },
+    {
+        "id": "v200",
+        "points": "200",
+        "text": "A true or false value is known as a...",
+        "answer": "boolean"
+    },
+    {
+        "id": "v300",
+        "points": "300",
+        "text": "A block of repeatable code that can be called by name.",
+        "answer": "function"
+    },
+    {
+        "id": "v400",
+        "points": "400",
+        "text": "Text only interface that shows warnings, errors, and information about your code.",
+        "answer": "terminal/console"
+    },
+    {
+        "id": "v500",
+        "points": "500",
+        "text": "Indicated as three equal signs, this operator checks for equality and type.",
+        "answer": "=== or strict equality"
+    },
+    {
+        "id": "v600",
+        "points": "600",
+        "text": "When a function calls itself to complete a task, it is known as...",
+        "answer": "recursion"
+
+    }
+]

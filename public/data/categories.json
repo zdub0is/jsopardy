@@ -1,0 +1,25 @@
+[{
+    "name": "Vocab",
+    "file": "vocab.json"
+},
+{
+    "name": "Vocab 2",
+    "file": "vocab2.json"
+},
+{
+    "name": "Explain the Code",
+    "file": "explaincode1.json"
+},
+{
+    "name": "What the Regex?",
+    "file": "regex1.json"
+},
+{
+    "name": "Methods",
+    "file": "methods1.json"
+},
+{
+    "name": "Trio of Concepts",
+    "file": "trio1.json"
+}
+]

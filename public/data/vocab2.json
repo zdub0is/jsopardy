@@ -1,0 +1,38 @@
+[
+    {
+        "id": "vo100",
+        "points": "100",
+        "text": "Square brackets that hold a list of items.",
+        "answer": "array"
+    },
+    {
+        "id": "vo200",
+        "points": "200",
+        "text": "Computers use this to communicate with each other.",
+        "answer": "internet"
+    },
+    {
+        "id": "vo300",
+        "points": "300",
+        "text": "Ways for developers to leave notes in their code.",
+        "answer": "comments"
+    },
+    {
+        "id": "vo400",
+        "points": "400",
+        "text": "A way to store data in key-value pairs.",
+        "answer": "object"
+    },
+    {
+        "id": "vo500",
+        "points": "500",
+        "text": "A way to reuse objects with similar properties and methods.",
+        "answer": "class"
+    },
+    {
+        "id": "vo600",
+        "points": "600",
+        "text": "A set of rules or instructions to solve a problem.",
+        "answer": "algorithm"
+    }
+]

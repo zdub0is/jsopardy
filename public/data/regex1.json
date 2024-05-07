@@ -1,0 +1,38 @@
+[
+    {
+        "id": "r100",
+        "points": "100",
+        "text": "Regex: `/^\\d+$/`\nA. Any string containing one digit\nB. Any string containing only digits\nC. Any string starting and ending with a digit\nD. Any string without digits",
+        "answer": "B. Any string containing only digits"
+    },
+    {
+        "id": "r200",
+        "points": "200",
+        "text": "Regex: /\\b(cat|dog|bird)\\b/\nA. Any words that start with \"cat\", \"dog\", or \"bird\"\nB. The exact words \"cat\", \"dog\", or \"bird\"\nC. Any text containing \"cat\", \"dog\", or \"bird\"\nD. Words ending in \"cat\", \"dog\", or \"bird\"",
+        "answer": "B. The exact words \"cat\", \"dog\", or \"bird\"."
+    },
+    {
+        "id": "r300",
+        "points": "300",
+        "text": "Regex: /[A-Z]{3}/\nA. Any three lowercase letters\nB. Any three uppercase letters\nC. Any three letters regardless of case\nD. Any string of three characters",
+        "answer": "B. Any three uppercase letters"
+    },
+    {
+        "id": "r400",
+        "points": "400",
+        "text": "Regex: /\\b\\w{10}\\b/\nA. Any word with 10 characters\nB. Any word with 10 or more characters\nC. Any word with exactly 10 characters\nD. Any word with less than 10 characters",
+        "answer": "C. Any word with exactly 10 characters"
+    },
+    {
+        "id": "r500",
+        "points": "500",
+        "text": "Regex: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/\nA. A hex color code\nB. A phone number\nC. A social security number\nD. A zip code",
+        "answer": "A. A hex color code"
+    },
+    {
+        "id": "r600",
+        "points": "600",
+        "text": "Regex: /\\d{2}:\\d{2}:\\d{2}/\nA. A zip code\nB. A date in the format MM/DD/YYYY\nC. A phone number\nD. A time in the format HH:MM:SS",
+        "answer": "D. A time in the format HH:MM:SS"
+    }
+]

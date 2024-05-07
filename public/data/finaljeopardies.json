@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "category": "Vocab",
+        "text": "Computer",
+        "answer": "A machine that can be programmed to carry out sequences of arithmetic or logical operations automatically."
+    },
+    {
+        "id": 2,
+        "category": "Vocab",
+        "text": "Algorithm",
+        "answer": "A process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer."
+    },
+    {
+        "id": 3,
+        "category": "Vocab",
+        "text": "Binary",
+        "answer": "Relating to, using, or expressed in a system of numerical notation that has 2 rather than 10 as a base."
+    },
+    {
+        "id": 4,
+        "category": "Vocab",
+        "text": "Bit",
+        "answer": "A basic unit of information in computing and digital communications."
+    },
+    {
+        "id": 5,
+        "category": "Vocab",
+        "text": "Byte",
+        "answer": "A group of binary digits or bits (usually eight) operated on as a unit."
+    }
+]

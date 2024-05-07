@@ -1,0 +1,39 @@
+[
+    {
+        "id": "m100",
+        "points": "100",
+        "text": "This method is used to add elements to the array.",
+        "answer": "push or unshift"
+    },
+    {
+        "id": "m200",
+        "points": "200",
+        "text": "This method is used to change all the letters in a string to one type of letters.",
+        "answer": "toUpperCase or toLowerCase"
+    },
+    {
+        "id": "m300",
+        "points": "300",
+        "text": "This method allows you to check if an item is in an array.",
+        "answer": "includes or indexOf"
+    },
+    {
+        "id": "m400",
+        "points": "400",
+        "text": "This method is used to turn a string into an array.",
+        "answer": "split"
+    },
+    {
+        "id": "m500",
+        "points": "500",
+        "text": "This method is useful for cleaning strings based on a regular expression.",
+        "answer": "replace/replaceAll"
+    },
+    {
+        "id": "m600",
+        "points": "600",
+        "text": "This method sounds similar to another, but this one mutates the original array and the other does not.",
+        "answer": "splice"
+    }
+]
+

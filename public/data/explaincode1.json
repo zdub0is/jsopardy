@@ -1,0 +1,38 @@
+[
+    {
+        "id": "e100",
+        "points": "100",
+        "text": "```javascript\nconsole.log(\"Hello, World!\");",
+        "answer": "print Hello, World! to the console"
+    },
+    {
+        "id": "e200",
+        "points": "200",
+        "text": "```javascript\nlet x = 5;  \nconsole.log(x * x);",
+        "answer": "prints 25 to the console"
+    },
+    {
+        "id": "e300",
+        "points": "300",
+        "text": "```javascript\nlet age = 18;\nif (age >= 18) {  \n\tconsole.log(\"Adult\"); \n} else {\n\tconsole.log(\"Minor\");  \n}",
+        "answer": "Prints Adult to the console"
+    },
+    {
+        "id": "e400",
+        "points": "400",
+        "text": "```javascript\nlet text = \"JavaScript\";\nconsole.log(text.substring(4).toUpperCase());",
+        "answer": "Print SCRIPT"
+    },
+    {
+        "id": "e500",
+        "points": "500",
+        "text": "```javascript\nlet array = [10, 20, 30];\nlet sum = array.reduce((total, current) => \n\t\ttotal + current);\nconsole.log(sum);",
+        "answer": "Prints 60 to the console"
+    },
+    {
+        "id": "e600",
+        "points": "600",
+        "text": "```javascript\nlet numbers = [1, 2, 3, 4, 5];\nlet filtered = numbers.filter(num => \n\t\tnum % 2 !== 0);\nconsole.log(filtered);",
+        "answer": "Prints [1, 3, 5] to the console"
+    }
+]

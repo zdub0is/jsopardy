@@ -20,7 +20,7 @@ export const Tile = ({point, id, active, handleTilePress}: TileProps) => {
         {active ? <Card isPressable isBlurred onPress={() => handleTilePress(id)} className="border-none bg-background/60  dark:bg-default-100/50 max-w-[610px] "
         shadow="sm">
             <CardBody className="flex flex-col items-center justify-center hover:bg-foreground/10">
-                <div className="text-2xl font-bold px-9 py-3">
+                <div className="text-4xl font-bold px-14 py-8">
                     {point}
                 </div>
             </CardBody>
@@ -29,7 +29,7 @@ export const Tile = ({point, id, active, handleTilePress}: TileProps) => {
         <Card className="border-none bg-background/90  dark:bg-default-100/25 max-w-[610px] "
         shadow="sm">
             <CardBody className="flex flex-col items-center justify-center">
-                <div className="text-2xl font-bold text-zinc-600 px-9 py-3">
+                <div className="text-zinc-600 text-4xl font-bold px-14 py-8">
                     {point}
                 </div>
             </CardBody>

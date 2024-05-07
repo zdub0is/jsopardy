@@ -1,0 +1,38 @@
+[
+    {
+        "id": "pc100",
+        "points": "100",
+        "text": "The concepts of `.map()`, for loops, and while loops are all examples of what?",
+        "answer": "iteration methods/loops"
+    },
+    {
+        "id": "pc200",
+        "points": "200",
+        "text": "The methods `.slice()`, `.pop()`, `.shift()` are all examples of what?",
+        "answer": "deleting elements"
+    },
+    {
+        "id": "pc300",
+        "points": "300",
+        "text": "Using a for loop, `.indexOf()`, and `.includes()` are all examples of what?",
+        "answer": "searching arrays"
+    },
+    {
+        "id": "pc400",
+        "points": "400",
+        "text": "keydown, mouseover, and click are all examples of what?",
+        "answer": "event listeners"
+    },
+    {
+        "id": "pc500",
+        "points": "500",
+        "text": "arrow, anonymous, callback are all examples of what?",
+        "answer": "script placement"
+    },
+    {
+        "id": "pc600",
+        "points": "600",
+        "text": "The concepts of `.push()`, `.unshift()`, and `.concat()` are all examples of what?",
+        "answer": "adding elements to an array"
+    }
+]

@@ -6,11 +6,11 @@ export const siteConfig = {
 	navItems: [
 		{
 			label: "Home",
-			href: "/",
+			href: "/create",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Game",
+      href: "/game",
     },
     {
       label: "Pricing",
