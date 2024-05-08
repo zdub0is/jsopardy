@@ -21,5 +21,29 @@
 {
     "name": "Trio of Concepts",
     "file": "trio1.json"
+},
+{
+    "name": "Return of the Regex",
+    "file": "regex2.json"
+},
+{
+    "name": "Explain the Code Sequel",
+    "file": "explaincode2.json"
+},
+{
+    "name": "Codenatomy",
+    "file": "vocab3.json"
+},
+{
+    "name": "The Fast Class",
+    "file": "classes.json"
+},
+{
+    "name": "CSS",
+    "file": "css1.json"
+},
+{
+    "name": "HTML",
+    "file": "html1.json"
 }
 ]

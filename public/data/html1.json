@@ -1,0 +1,38 @@
+[
+    {
+        "id": "html100",
+        "points": "100",
+        "text": "What do we start an HTML document with?",
+        "answer": "DOCTYPE"
+    },
+    {
+        "id": "html200",
+        "points": "200",
+        "text": "The body is to the main content as the head is to the...?",
+        "answer": "meta/supplementary information"
+    },
+    {
+        "id": "html300",
+        "points": "300",
+        "text": "We can use the `<a>` tag to link to other pages. What attribute do we use to specify the URL?",
+        "answer": "href"
+    },
+    {
+        "id": "html400",
+        "points": "400",
+        "text": "How do we create a comment in HTML?",
+        "answer": "`<!-- comment -->`"
+    },
+    {
+        "id": "html500",
+        "points": "500",
+        "text": "What is the difference between a div and a span?",
+        "answer": "div is block level, span is inline"
+    },
+    {
+        "id": "html600",
+        "points": "600",
+        "text": "When working with forms, what attribute do we use to specify the type of input?",
+        "answer": "type"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "ror100",
+        "points": "100",
+        "text": "`/cat/gi` is looking for what?",
+        "answer": "cat"
+    },
+    {
+        "id": "ror200",
+        "points": "200",
+        "text": "`/^[a-zA-Z][^@]+@[^@]+$/` is looking for what?",
+        "answer": "email addresses"
+    },
+    {
+        "id": "ror300",
+        "points": "300",
+        "text": "`/\\b\\d{3}-\\d{2}-\\d{4}\\b/` is looking for what?",
+        "answer": "social security numbers"
+    },
+    {
+        "id": "ror400",
+        "points": "400",
+        "text": "`/^\\w{5,15}$/` is looking for what?",
+        "answer": "any word between 5 and 15 characters long"
+    },
+    {
+        "id": "ror500",
+        "points": "500",
+        "text": "`/JS\\d/g` is looking for what?",
+        "answer": "JS followed by a digit"
+    },
+    {
+        "id": "ror600",
+        "points": "600",
+        "text": "`/^https?:\\/\\//` is looking for what?",
+        "answer": "http or https"
+    }
+]

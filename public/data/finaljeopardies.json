@@ -28,5 +28,11 @@
         "category": "Vocab",
         "text": "Byte",
         "answer": "A group of binary digits or bits (usually eight) operated on as a unit."
+    },
+    {
+        "id": 6,
+        "category": "Write Code",
+        "text": "Write a function that takes in a number and returns the square of that number.",
+        "answer": "```javascript\nfunction square(num) { \n\treturn num * num; \n};"
     }
 ]

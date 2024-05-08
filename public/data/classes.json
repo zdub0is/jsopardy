@@ -1,0 +1,38 @@
+[
+    {
+        "id": "cl100",
+        "points": "100",
+        "text": "This function is required to be called before anything else in a class.",
+        "answer": "Constructor"
+    },
+    {
+        "id": "cl200",
+        "points": "200",
+        "text": "When referencing class-wide variables, the (blank) keyword is used.",
+        "answer": "this"
+    },
+    {
+        "id": "cl300",
+        "points": "300",
+        "text": "This keyword is used to create a new instance of a class.",
+        "answer": "new"
+    },
+    {
+        "id": "cl400",
+        "points": "400",
+        "text": "Three examples of classes include...",
+        "answer": "Date, Math, String, Number, Boolean, Array, Object, etc."
+    },
+    {
+        "id": "cl500",
+        "points": "500",
+        "text": "When you want to create a new class that gets attributes from another class, you use the (blank) keyword.",
+        "answer": "extends"
+    },
+    {
+        "id": "cl600",
+        "points": "600",
+        "text": "When a class is a child of another class, it is...",
+        "answer": "inheriting"
+    }
+]

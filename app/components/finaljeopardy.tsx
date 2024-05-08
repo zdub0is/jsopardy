@@ -4,6 +4,7 @@ import * as React from "react";
 import { GameboardContext, useGameboard } from "../providers";
 import { Button, Modal, ModalBody, ModalContent, ModalFooter, useDisclosure } from "@nextui-org/react";
 import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
 // import fjJson from "@/data/fj-sample.json";
 
 const fjJson = {
@@ -44,7 +45,15 @@ export default function FinalJeopardy() {
         }
     }, [finalJeopardy])
 
-
+    const determineClass = (text: string) => {
+        if (text.startsWith('Regex:')) {
+            return 'regex';
+        } else if (text.startsWith('`')) {
+            return 'code';
+        } else {
+            return '';
+        }
+    }
     return (
         <>
         <Button className="text-2xl py-8 px-20 border-2 dark:border-default-100/50 dark:text-default-900/75" variant="ghost" onClick={onOpen} color="default">Open Final Jeopardy</Button>
@@ -59,7 +68,9 @@ export default function FinalJeopardy() {
                 </> :
             <>
             <ModalBody className="text-8xl font-bold text-center py-10 leading-relaxed">
-                {front ? <h2>{fj.text}</h2> : <h2>{fj.answer}</h2>}
+            <div id="modal-text" className={front ? determineClass(fj.text) : determineClass(fj.answer)}>
+                {front ? <Markdown className="line-break">{fj.text}</Markdown> : <Markdown className="line-break">{fj.answer}</Markdown>}
+            </div>
             </ModalBody>
             <ModalFooter>
                 {front ? <>

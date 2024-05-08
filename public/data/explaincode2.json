@@ -1,0 +1,38 @@
+[
+    {
+        "id": "ee100",
+        "points": "100",
+        "text": "```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst result = numbers.map(n => n * 2);\nconsole.log(result);\n```",
+        "answer": "create a new array by multiplying each element of the original array by two, and output [2, 4, 6, 8, 10]"
+    },
+    {
+        "id": "ee200",
+        "points": "200",
+        "text": "```javascript\nconst greet = name => `Hello, ${name}!`;\nconsole.log(greet(\"Alice\"));\n```",
+        "answer": "define an arrow function that takes a name and returns a greeting, outputting 'Hello, Alice!'"
+    },
+    {
+        "id": "ee300",
+        "points": "300",
+        "text": "```javascript\nlet count = 0;\nfunction increment() {\n  count++;\n  console.log(count);\n}\nincrement();\nincrement();\n```",
+        "answer": "define a function that increments the count each time it's called, outputting 1 then 2"
+    },
+    {
+        "id": "ee400",
+        "points": "400",
+        "text": "```javascript\nconst data = { id: 1, name: 'John' };\nconsole.log(data.hasOwnProperty('name'));\n```",
+        "answer": "check if the object has a property 'name' and return true because it does"
+    },
+    {
+        "id": "ee500",
+        "points": "500",
+        "text": "```javascript\nconst colors = ['red', 'green', 'blue'];\ncolors.push('yellow');\nconsole.log(colors);\n```",
+        "answer": "add 'yellow' to the end of the colors array and output ['red', 'green', 'blue', 'yellow']"
+    },
+    {
+        "id": "ee600",
+        "points": "600",
+        "text": "```javascript\nconst fruits = ['apple', 'banana', 'cherry'];\nconsole.log(fruits.slice(1, 3));\n```",
+        "answer": "create a new array from the second element to the third element of the original array, outputting ['banana', 'cherry']"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "css100",
+        "points": "100",
+        "text": "What does CSS stand for?",
+        "answer": "cascading style sheets"
+    },
+    {
+        "id": "css200",
+        "points": "200",
+        "text": "How can we make websites responsive to different screen sizes?",
+        "answer": "media queries"
+    },
+    {
+        "id": "css300",
+        "points": "300",
+        "text": "We can check the (blank) of text to make sure it is easy to read on a website.",
+        "answer": "contrast"
+    },
+    {
+        "id": "css400",
+        "points": "400",
+        "text": "If we want to change a bunch of divs that are all meant to be for the same purpose at once, we can use this CSS selector.",
+        "answer": "class"
+    },
+    {
+        "id": "css500",
+        "points": "500",
+        "text": "When working with colors in CSS, rgba can be used to make colors more transparent. What does the 'a' stand for?",
+        "answer": "alpha"
+    },
+    {
+        "id": "css600",
+        "points": "600",
+        "text": "Hex codes are made up of 6 characters with two characters each representing this, this, and this.",
+        "answer": "red, green, blue"
+    }
+]
